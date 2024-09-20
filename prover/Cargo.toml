@@ -31,6 +31,7 @@ num-traits = "0.2.16"
 rayon = "1.8.0"
 halo2_solidity_verifier = { git = "https://github.com/summa-dev/halo2-solidity-verifier", version = "0.1.0", features = ["evm"] }
 
+
 [dev-dependencies]
 criterion= "0.3"
 
@@ -45,3 +46,7 @@ path = "bin/gen_verifier.rs"
 [[bin]]
 name = "generate_commitment_and_proofs"
 path = "bin/gen_commit_and_proofs.rs"
+
+[[bin]]
+name = "print_vk_verifier"
+path = "bin/print_vk_verifier.rs"
